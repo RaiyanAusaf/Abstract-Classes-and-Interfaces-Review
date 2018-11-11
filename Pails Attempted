@@ -1,0 +1,17 @@
+you want to read input for the integer sizes of the pails
+you would want to loop the X size pail first, because its the smallest
+then loop the Y pail to find out how many times we can pour after pouring the X size bucket
+you would want to check if you overflood the M bucket
+
+//Maybe use a scanner to read the input for X, Y, and M values
+import java.util.Scanner;
+Scanner sc = new Scanner(Pails.in); 
+//Times you poured starts with 0 
+// If you reached M then you stop
+//Pour in increments of one
+for(int xPoured = 0; xPoured*x <= m; xPoured++) {
+//Times you started to pour Y bucket 0
+//If X times you poured + Y times you poured then stop
+//Pour in increments of one
+  for(int yPoured = 0; xPoured*x+yPoured*x <= m; yPoured++)
+  
