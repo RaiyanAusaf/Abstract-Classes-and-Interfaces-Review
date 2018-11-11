@@ -1,0 +1,45 @@
+import java.util.Scanner;
+
+public class ReverseArrayRecursion {
+
+ public static void reverse(int arr[], int start, int end) {
+
+  int temp;
+
+  //Swap logic used in the assignment for swapping pairs of consecutive digits
+  temp = arr[start];
+  arr[start] = arr[end];
+  arr[end] = temp;
+
+  //Recursively swap an array
+  reverse(arr, start + 1, end - 1);
+ }
+
+
+ public static void main(String[] args) {
+  //Scanner needed to read input from the user
+  Scanner in = new Scanner(System.in);
+
+  System.out.println("Enter the size of an array");
+  int n = in .nextInt();
+  // Size of an array will be size of input by user
+  //Declare an array
+  int arr[] = new int[n];
+
+  System.out.println("Enter an array values");
+
+  //Input array values
+  //Im missing something here I don't know what to put
+ }
+ //Starting index is 0
+ //End index is n-1
+ reverse(arr, 0, n - 1);
+
+ System.out.println("Reverse of an array is ");
+
+ // Im missing something here I dont know what it is
+ System.out.println(arr[i]);
+}
+}
+
+}
